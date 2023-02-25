@@ -1,0 +1,30 @@
+------------------------------------------------------------
+  Gamelog
+  Listener: Hollindustries
+  Session Started: 2023.02.04 11:26:21
+------------------------------------------------------------
+[ 2023.02.04 11:26:23 ] (hint) Attempting to join a channel
+[ 2023.02.04 11:26:24 ] (hint) Attempting to join a channel
+[ 2023.02.04 11:26:24 ] (hint) Attempting to join a channel
+[ 2023.02.04 11:26:24 ] (hint) Attempting to join a channel
+[ 2023.02.04 11:26:24 ] (hint) Attempting to join a channel
+[ 2023.02.04 11:56:37 ] (question) The following items will be redeemed, activated and applied to Hollindustries <br><a href="showinfo:63434">Caldari Shuttle Halcyon Dawn SKIN</a>.<br>
+Do you wish to proceed?
+[ 2023.02.04 11:58:10 ] (question) Are you sure you want to join the fleet commanded by <a href="showinfo:1375//2114367278">Dravynea Uta</a>?
+<br><br>
+NOTE: Attacking members of your fleet is not a CONCORD sanctioned activity and may result in security status loss and police response.
+[ 2023.02.04 13:24:54 ] (notify) Ship stopping
+[ 2023.02.04 13:24:59 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote shield boosted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Medium Remote Shield Booster II</font>
+[ 2023.02.04 13:25:02 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:04 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote shield boosted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Remote Shield Booster II</font>
+[ 2023.02.04 13:25:06 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:07 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:07 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote shield boosted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Medium Remote Shield Booster II</font>
+[ 2023.02.04 13:25:11 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:12 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:12 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote shield boosted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Remote Shield Booster II</font>
+[ 2023.02.04 13:25:15 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote shield boosted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Medium Remote Shield Booster II</font>
+[ 2023.02.04 13:25:16 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:17 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:21 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>
+[ 2023.02.04 13:25:22 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote capacitor transmitted by </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Basilisk</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Radiative Scoped Remote Capacitor Transmitter</font>

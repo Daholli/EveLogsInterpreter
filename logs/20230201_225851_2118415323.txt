@@ -1,0 +1,182 @@
+------------------------------------------------------------
+  Gamelog
+  Listener: Hollindustries
+  Session Started: 2023.02.01 22:58:51
+------------------------------------------------------------
+[ 2023.02.01 22:58:53 ] (hint) Attempting to join a channel
+[ 2023.02.01 22:58:54 ] (hint) Attempting to join a channel
+[ 2023.02.01 22:58:54 ] (hint) Attempting to join a channel
+[ 2023.02.01 22:58:54 ] (hint) Attempting to join a channel
+[ 2023.02.01 22:58:54 ] (hint) Attempting to join a channel
+[ 2023.02.01 23:04:41 ] (question) Are you sure you want to join the fleet commanded by <a href="showinfo:1376//2113819687">Oramara Erkkinen</a>?
+<br><br>
+NOTE: Attacking members of your fleet is not a CONCORD sanctioned activity and may result in security status loss and police response.
+[ 2023.02.01 23:11:02 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:11:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:11:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:11:29 ] (notify) Ship stopping
+[ 2023.02.01 23:11:31 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:11:59 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:11:59 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:12:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:12:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:13:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:13:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:14:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:14:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:14:43 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.01 23:15:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:15:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:16:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:16:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:17:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:17:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:18:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:18:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:19:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:19:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:20:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:20:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:21:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:21:19 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:25:33 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:25:33 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:25:36 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:26:22 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.01 23:27:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:27:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:28:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:28:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:28:18 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:29:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:29:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:30:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:30:17 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:39:00 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.01 23:39:00 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:39:00 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:39:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:39:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:40:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:40:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:40:20 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:41:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:41:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:42:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:42:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:42:49 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.01 23:43:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:43:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:43:55 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:44:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:44:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:45:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:45:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:46:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:46:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:47:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:47:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:48:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:48:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:49:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:49:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:50:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:50:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:51:13 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:51:14 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:51:58 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:51:58 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.01 23:52:07 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:52:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:52:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.01 23:52:53 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:53:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:53:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:53:41 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.01 23:54:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:54:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:54:42 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.01 23:55:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:55:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:55:56 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.01 23:56:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:56:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.01 23:57:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:57:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:58:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:58:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:59:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.01 23:59:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:00:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:00:15 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:06:24 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.02 00:06:24 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.02 00:06:24 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.02 00:06:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:06:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:07:25 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.02 00:07:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:07:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:08:29 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.02 00:08:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:08:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:09:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:09:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:09:33 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color>
+[ 2023.02.02 00:10:15 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.02 00:10:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:10:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:11:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:14:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:14:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:15:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:15:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:16:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:16:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:17:30 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:17:31 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>1</b> fleet member.
+[ 2023.02.02 00:19:31 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.02 00:19:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:19:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:19:47 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.02 00:19:48 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b><font size=12><color=0xFF3380FF><b>Sunesis</b></color></font> </b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font>Arithmos Tyrannos
+[ 2023.02.02 00:20:01 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.02 00:20:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:20:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>5</b> fleet members.
+[ 2023.02.02 00:21:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:21:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:21:58 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Paladin</b></color></font> 
+[ 2023.02.02 00:22:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:22:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:23:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:23:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:24:05 ] (combat) <color=0xffffffff><b>Warp scramble attempt</b> <color=0x77ffffff><font size=10>from</font> <color=0xffffffff><b>Arithmos Tyrannos</b> <color=0x77ffffff><font size=10>to <b><color=0xffffffff></font><font size=12><color=0xFF3380FF><b>Vargur</b></color></font> 
+[ 2023.02.02 00:24:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:24:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:25:38 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:25:39 ] (notify) Your <b>Armor Command Burst II</b> has applied bonuses to <b>6</b> fleet members.
+[ 2023.02.02 00:59:35 ] (question) You are about to load up a simulated ship. Any progress you have made on your currently simulated ship will be lost.<br><br>Are you sure you want to continue?
+[ 2023.02.02 01:03:51 ] (info) You have just been promoted to boss in your fleet and therefore your fleet's advert in the Fleet Finder has been updated.
+[ 2023.02.02 01:07:50 ] (notify) Starting clone jumping
+[ 2023.02.02 01:07:50 ] (notify) Disembarking from ship
+[ 2023.02.02 01:10:16 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:18 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:19 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:21 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:23 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:25 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:26 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:27 ] (combat) <color=0xffccff66><b>0</b><color=0x77ffffff><font size=10> remote armor repaired to </font><b><color=0xffffffff><font size=12><color=0xFF3380FF><b>Hecate</b></color></font> <color=0xFF7FFF1F><b>-BUH-</b></color></b><color=0x77ffffff><font size=10> - Large Remote Armor Repairer II</font>
+[ 2023.02.02 01:10:28 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:30 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:31 ] (notify) Ship stopping
+[ 2023.02.02 01:10:32 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:33 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:35 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:37 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:39 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:40 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:42 ] (combat) Dravynea Uta misses you completely - Light Neutron Blaster II
+[ 2023.02.02 01:10:49 ] (notify) The station denies you permission to dock for the moment due to your recent acts of aggression.
+[ 2023.02.02 01:11:51 ] (notify) External factors are preventing your Shadow Serpentis Sensor Booster from responding to this command
+[ 2023.02.02 01:11:56 ] (notify) External factors are preventing your Shadow Serpentis Sensor Booster from responding to this command

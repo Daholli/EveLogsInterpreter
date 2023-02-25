@@ -1,0 +1,18 @@
+    skirmish['cap_outgoing'] = remote_cap_outgoing.apply(lambda x: int(x[0]) if int(x[0]) > 0 else 0.1)
+
+    skirmish['linetext'] = skirmish['linetext'].str.replace(
+        r'\d*\sremote\scapacitor\stransmitted\sto', '', regex=True)
+    skirmish['shiptype'] = skirmish.apply(
+        lambda x: x.linetext.split()[0]
+        if x.cap_outgoing > 0 else x.shiptype, axis=1)
+
+    skirmish['linetext'] = skirmish.apply(
+        lambda x: ' '.join(x.linetext.split()[1:])
+        if x.cap_outgoing > 0 else x.linetext, axis=1)
+    skirmish['module_ammo'] = skirmish.apply(
+        lambda x: ''.join(x.linetext.rsplit("- ", 1)[-1])
+        if x.cap_outgoing > 0 else x.module_ammo, axis=1)
+    skirmish['linetext'] = skirmish.apply(
+        lambda x: '' if x.cap_outgoing > 0 else x.linetext, axis=1)
+    skirmish['cap_outgoing'] = skirmish['cap_outgoing'].fillna(
+        0).astype(int)
