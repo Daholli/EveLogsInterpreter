@@ -192,5 +192,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-all_csv/*
+all_csv/*.csv
 logs/*
