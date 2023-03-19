@@ -41,6 +41,8 @@ class AnalysingLogReader:
 
         self.mined = pd.DataFrame()
 
+        self.burst_jammed = pd.DataFrame()
+
     def select_files(self):
         root = tk.Tk()
         return root.tk.splitlist(
@@ -52,6 +54,8 @@ class AnalysingLogReader:
             self.read_file(file_name)
 
         self.populate_frames()
+
+        self.main_frame.to_csv("./all_csv/main_frame.csv")
 
     def read_file(self, file_name):
         with open(file_name, "r", encoding="utf-8") as f:
@@ -168,6 +172,8 @@ class AnalysingLogReader:
             )
         ].copy()
 
+        self.burst_jammed = self.main_frame[self.main_frame.linetext.str.contains(logrex[self.language]["locklost"], regex=True)].copy()
+
     def export_frames(self, path="./all_csv/"):
         self.damage_out.to_csv(path + "damage_out.csv")
         self.damage_in.to_csv(path + "damage_in.csv")
@@ -195,6 +201,8 @@ class AnalysingLogReader:
 
         self.mined.to_csv(path + "mined.csv")
 
+        self.burst_jammed.to_csv(path + "burst_jammed.csv")
+
     def process_frames(self):
         self.process_damage()
         self.process_remoteArmor()
@@ -205,6 +213,7 @@ class AnalysingLogReader:
         self.process_nos()
         self.process_misses()
         self.process_mining()
+
 
     def process_damage(self):
         if not self.damage_in.empty:
@@ -221,7 +230,7 @@ class AnalysingLogReader:
                 )[-1],
                 axis=1,
             )
-            self.damage_in["dmg"] = self.damage_in.apply(
+            self.damage_in["amount"] = self.damage_in.apply(
                 lambda x: x.linetext.split(" ")[0], axis=1
             ).astype(int)
 
@@ -260,7 +269,7 @@ class AnalysingLogReader:
                     "aggressor",
                     "shiptype",
                     "module_or_ammo",
-                    "dmg",
+                    "amount",
                     "hit_quality",
                 ]
             ]
@@ -279,7 +288,7 @@ class AnalysingLogReader:
                 )[-1],
                 axis=1,
             )
-            self.damage_out["dmg"] = self.damage_out.apply(
+            self.damage_out["amount"] = self.damage_out.apply(
                 lambda x: x.linetext.split(" ")[0], axis=1
             ).astype(int)
 
@@ -318,7 +327,7 @@ class AnalysingLogReader:
                     "target",
                     "shiptype",
                     "module_or_ammo",
-                    "dmg",
+                    "amount",
                     "hit_quality",
                 ]
             ]
@@ -562,6 +571,27 @@ class AnalysingLogReader:
                 "linetext"
             ].str.replace(r"\s*\(combat\)\s", "", regex=True)
 
+            self.capNeutralized_in["amount"] = self.capNeutralized_in.apply(
+                lambda x: x.linetext.split(" ")[0], axis=1
+            ).astype(int)
+
+            self.capNeutralized_in["linetext"] = self.capNeutralized_in[
+                "linetext"
+            ].str.replace(r"\d*\sGJ\senergy\sneutralized\s", "", regex=True)
+
+            self.capNeutralized_in["module_or_ammo"] = self.capNeutralized_in.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[-1], axis=1
+            )
+
+            self.capNeutralized_in["linetext"] = self.capNeutralized_in.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[0], axis=1
+            )
+
+            self.capNeutralized_in.rename({"linetext": "brackets"}, axis=1, inplace=True)
+            self.capNeutralized_in = self.capNeutralized_in[
+                ["timestamp", "pilot", "brackets", "module_or_ammo", "amount"]
+            ]
+            
         if not self.capNeutralized_out.empty:
             self.capNeutralized_out["linetext"] = self.capNeutralized_out[
                 "linetext"
@@ -570,6 +600,26 @@ class AnalysingLogReader:
                 "linetext"
             ].str.replace(r"\s*\(combat\)\s", "", regex=True)
 
+            self.capNeutralized_out["amount"] = self.capNeutralized_out.apply(
+                lambda x: x.linetext.split(" ")[0], axis=1
+            ).astype(int)
+
+            self.capNeutralized_out["linetext"] = self.capNeutralized_out[
+                "linetext"
+            ].str.replace(r"\d*\sGJ\senergy\sneutralized\s", "", regex=True)
+
+            self.capNeutralized_out["module_or_ammo"] = self.capNeutralized_out.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[-1], axis=1
+            )
+
+            self.capNeutralized_out["linetext"] = self.capNeutralized_out.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[0], axis=1
+            )
+
+            self.capNeutralized_out.rename({"linetext": "brackets"}, axis=1, inplace=True)
+            self.capNeutralized_out = self.capNeutralized_out[
+                ["timestamp", "pilot", "brackets", "module_or_ammo", "amount"]
+            ]
 
     def process_nos(self):
         if not self.nosRecieved.empty:
@@ -580,6 +630,27 @@ class AnalysingLogReader:
                 "linetext"
             ].str.replace(r"\s*\(combat\)\s", "", regex=True)
 
+            self.nosRecieved["amount"] = self.nosRecieved.apply(
+                lambda x: x.linetext.split(" ")[0], axis=1
+            ).astype(int)
+
+            self.nosRecieved["linetext"] = self.nosRecieved[
+                "linetext"
+            ].str.replace(r"\d*\sGJ\senergy\sdrained\sfrom\s", "", regex=True)
+
+            self.nosRecieved["module_or_ammo"] = self.nosRecieved.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[-1], axis=1
+            )
+
+            self.nosRecieved["linetext"] = self.nosRecieved.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[0], axis=1
+            )
+
+            self.nosRecieved.rename({"linetext": "brackets"}, axis=1, inplace=True)
+            self.nosRecieved = self.nosRecieved[
+                ["timestamp", "pilot", "brackets", "module_or_ammo", "amount"]
+            ]
+
         if not self.nosTaken.empty:
             self.nosTaken["linetext"] = self.nosTaken[
                 "linetext"
@@ -588,11 +659,69 @@ class AnalysingLogReader:
                 "linetext"
             ].str.replace(r"\s*\(combat\)\s", "", regex=True)
 
+            self.nosTaken["amount"] = self.nosTaken.apply(
+                lambda x: x.linetext.split(" ")[0].strip("-"), axis=1
+            ).astype(int)
+
+            self.nosTaken["linetext"] = self.nosTaken[
+                "linetext"
+            ].str.replace(r"-\d*\sGJ\senergy\sdrained\sto\s", "", regex=True)
+
+            self.nosTaken["module_or_ammo"] = self.nosTaken.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[-1], axis=1
+            )
+
+            self.nosTaken["linetext"] = self.nosTaken.apply(
+                lambda x: x.linetext.rsplit(" - ", 1)[0], axis=1
+            )
+
+            self.nosTaken.rename({"linetext": "brackets"}, axis=1, inplace=True)
+            self.nosTaken = self.nosTaken[
+                ["timestamp", "pilot", "brackets", "module_or_ammo", "amount"]
+            ]
+
     def process_misses(self):
         pass
 
     def process_mining(self):
         pass
+
+    def print_stats(self):
+        if not self.damage_out.empty:
+            print("Sum of damage done: " + str(self.damage_out["amount"].sum()))
+        if not self.damage_in.empty:
+            print("Sum of damage taken: " + str(self.damage_in["amount"].sum()))
+        if not self.armorRepaired_out.empty:
+            print("Sum of remote armor repaired: " + str(self.armorRepaired_out["amount"].sum()))
+        if not self.armorRepaired_in.empty:
+            print("Sum of remote armor recieved: " + str(self.armorRepaired_in["amount"].sum()))
+        if not self.shieldBoosted_out.empty:
+            print("Sum of remote shield boosted: " + str(self.shieldBoosted_out["amount"].sum()))
+        if not self.shieldBoosted_in.empty:
+            print("Sum of remote shield recieved: " + str(self.shieldBoosted_in["amount"].sum()))
+        if not self.hullRepaired_out.empty:
+            print("Sum of remote hull repaired: " + str(self.hullRepaired_out["amount"].sum()))
+        if not self.hullRepaired_in.empty:
+            print("Sum of remote hull recieved: " + str(self.hullRepaired_in["amount"].sum()))
+        if not self.capTransfer_out.empty:
+            print("Sum of remote cap transfer sent: " + str(self.capTransfer_out["amount"].sum()) + " GJ")
+        if not self.capTransfer_in.empty:
+            print("Sum of remote cap transfer recieved: " + str(self.capTransfer_in["amount"].sum()) + " GJ")
+        if not self.capNeutralized_out.empty:
+            print("Sum of cap neutralization out: " + str(self.capNeutralized_out["amount"].sum()) + " GJ")
+        if not self.capNeutralized_in.empty:
+            print("Sum of cap neutralization in: " + str(self.capNeutralized_in["amount"].sum() + self.nosTaken["amount"].sum()) + " GJ")
+        if not self.nosRecieved.empty:
+            print("Sum of nos recieved: " + str(self.nosRecieved["amount"].sum()) + " GJ")
+
+        if not self.burst_jammed.empty:
+            print("Amount of times burst jammed: " + str(len(logreader.burst_jammed.index)))
+        # self.misses_out = pd.DataFrame()
+        # self.misses_in = pd.DataFrame()
+
+        # self.mined = pd.DataFrame()
+
+        # self.burst_jammed = pd.DataFrame()
 
 
 def process_misses(skirmish):
@@ -639,301 +768,6 @@ def process_misses(skirmish):
     return skirmish
 
 
-def process_neut_incoming(skirmish):
-    # neut_in
-    mask = skirmish["linetext"].str.split("GJ energy neutralized").apply(len) > 1
-    energy_neutralized = skirmish["linetext"].str.split("GJ energy neutralized")[mask]
-    mask = skirmish["linetext"].str.split("GJ energy drained to").apply(len) > 1
-    energy_drained = skirmish["linetext"].str.split("GJ energy drained to")[mask]
-
-    energy_neutralized = energy_neutralized.apply(
-        lambda x: [x[0].strip(" in "), x[1]] if "in" in x[0] else pd.NA
-    )
-    energy_neutralized.dropna(inplace=True)
-
-    energy_drained = energy_drained.apply(
-        lambda x: [x[0].strip(" in "), x[1]] if "in" in x[0] else pd.NA
-    )
-
-    skirmish["neut_in"] = energy_drained.apply(
-        lambda x: abs(int(x[0])) if int(x[0]) < 0 else 0.1
-    )
-    tmp_neut_in_1 = skirmish["neut_in"].copy()
-    skirmish["neut_in"] = energy_neutralized.apply(lambda x: int(x[0]))
-    tmp_neut_in_2 = skirmish["neut_in"].copy()
-
-    skirmish["neut_in"] = skirmish.apply(
-        lambda x: tmp_neut_in_1[x.name] if pd.isna(x.neut_in) else x.neut_in, axis=1
-    )
-    skirmish["neut_in"] = skirmish.apply(
-        lambda x: tmp_neut_in_2[x.name] if pd.isna(x.neut_in) else x.neut_in, axis=1
-    )
-
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"\sin\s\d*\sGJ\s\w*\sneutralized", "", regex=True
-    )
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"-\d*\sGJ\s\w*\sdrained\sto", "", regex=True
-    )
-
-    skirmish["shiptype"] = skirmish.apply(
-        lambda x: x.linetext.split()[0] if x.neut_in > 0 else x.shiptype, axis=1
-    )
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: " ".join(x.linetext.split()[1:]) if x.neut_in > 0 else x.linetext,
-        axis=1,
-    )
-    skirmish["module_ammo"] = skirmish.apply(
-        lambda x: "".join(x.linetext.rsplit("- ", 1)[-1])
-        if x.neut_in > 0
-        else x.module_ammo,
-        axis=1,
-    )
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: "" if x.neut_in > 0 else x.linetext, axis=1
-    )
-    skirmish["neut_in"] = skirmish["neut_in"].fillna(0).astype(int)
-
-    return skirmish
-
-
-def process_neut_outgoing(skirmish):
-    # neut_out
-    mask = skirmish["linetext"].str.split("GJ energy neutralized").apply(len) > 1
-    energy_neutralized = skirmish["linetext"].str.split("GJ energy neutralized")[mask]
-    mask = skirmish["linetext"].str.split("GJ energy drained from").apply(len) > 1
-    energy_drained = skirmish["linetext"].str.split("GJ energy drained from")[mask]
-
-    energy_neutralized = energy_neutralized.apply(
-        lambda x: [x[0].strip(" out "), x[1]] if "out" in x[0] else pd.NA
-    )
-    energy_neutralized.dropna(inplace=True)
-
-    energy_drained = energy_drained.apply(
-        lambda x: [x[0].strip(" out "), x[1]] if "out" in x[0] else pd.NA
-    )
-
-    skirmish["neut_out"] = energy_drained.apply(
-        lambda x: abs(int(x[0])) if int(x[0]) > 0 else 0.1
-    )
-    tmp_neut_out_1 = skirmish["neut_out"].copy()
-    skirmish["neut_out"] = energy_neutralized.apply(lambda x: int(x[0]))
-    tmp_neut_out_2 = skirmish["neut_out"].copy()
-
-    skirmish["neut_out"] = skirmish.apply(
-        lambda x: tmp_neut_out_1[x.name] if pd.isna(x.neut_out) else x.neut_out, axis=1
-    )
-    skirmish["neut_out"] = skirmish.apply(
-        lambda x: tmp_neut_out_2[x.name] if pd.isna(x.neut_out) else x.neut_out, axis=1
-    )
-
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"\sout\s\d*\sGJ\s\w*\sneutralized", "", regex=True
-    )
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"\sout\s\+\d*\sGJ\s\w*\sdrained\sfrom", "", regex=True
-    )
-
-    skirmish["shiptype"] = skirmish.apply(
-        lambda x: x.linetext.split()[0] if x.neut_out > 0 else x.shiptype, axis=1
-    )
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: " ".join(x.linetext.split()[1:]) if x.neut_out > 0 else x.linetext,
-        axis=1,
-    )
-    skirmish["module_ammo"] = skirmish.apply(
-        lambda x: "".join(x.linetext.rsplit("- ", 1)[-1])
-        if x.neut_out > 0
-        else x.module_ammo,
-        axis=1,
-    )
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: "" if x.neut_out > 0 else x.linetext, axis=1
-    )
-    skirmish["neut_out"] = skirmish["neut_out"].fillna(0).astype(int)
-
-    return skirmish
-
-
-def process_remote_capacitor_in(skirmish):
-    mask = (
-        skirmish["linetext"].str.split("remote capacitor transmitted by").apply(len) > 1
-    )
-    remote_cap_incoming = skirmish["linetext"].str.split(
-        "remote capacitor transmitted by"
-    )[mask]
-
-    skirmish["cap_incoming"] = remote_cap_incoming.apply(
-        lambda x: int(x[0]) if int(x[0]) > 0 else 0.1
-    )
-
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"\d*\sremote\scapacitor\stransmitted\sby", "", regex=True
-    )
-    skirmish["shiptype"] = skirmish.apply(
-        lambda x: x.linetext.split()[0] if x.cap_incoming > 0 else x.shiptype, axis=1
-    )
-
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: " ".join(x.linetext.split()[1:])
-        if x.cap_incoming > 0
-        else x.linetext,
-        axis=1,
-    )
-    skirmish["module_ammo"] = skirmish.apply(
-        lambda x: "".join(x.linetext.rsplit("- ", 1)[-1])
-        if x.cap_incoming > 0
-        else x.module_ammo,
-        axis=1,
-    )
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: "" if x.cap_incoming > 0 else x.linetext, axis=1
-    )
-    skirmish["cap_incoming"] = skirmish["cap_incoming"].fillna(0).astype(int)
-
-    return skirmish
-
-
-def process_remote_capacitor_out(skirmish):
-    mask = (
-        skirmish["linetext"].str.split("remote capacitor transmitted to").apply(len) > 1
-    )
-    remote_cap_outgoing = skirmish["linetext"].str.split(
-        "remote capacitor transmitted to"
-    )[mask]
-
-    skirmish["cap_outgoing"] = remote_cap_outgoing.apply(
-        lambda x: int(x[0]) if int(x[0]) > 0 else 0.1
-    )
-
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"\d*\sremote\scapacitor\stransmitted\sto", "", regex=True
-    )
-    skirmish["shiptype"] = skirmish.apply(
-        lambda x: x.linetext.split()[0] if x.cap_outgoing > 0 else x.shiptype, axis=1
-    )
-
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: " ".join(x.linetext.split()[1:])
-        if x.cap_outgoing > 0
-        else x.linetext,
-        axis=1,
-    )
-    skirmish["module_ammo"] = skirmish.apply(
-        lambda x: "".join(x.linetext.rsplit("- ", 1)[-1])
-        if x.cap_outgoing > 0
-        else x.module_ammo,
-        axis=1,
-    )
-    skirmish["linetext"] = skirmish.apply(
-        lambda x: "" if x.cap_outgoing > 0 else x.linetext, axis=1
-    )
-    skirmish["cap_outgoing"] = skirmish["cap_outgoing"].fillna(0).astype(int)
-
-    return skirmish
-
-
-def process_lines(skirmish):
-    timed_lines = skirmish[
-        skirmish.linetext.str.contains("^\[\s\d*.\d*.\d*\s\d*:\d*:\d*\s\]")
-    ]
-
-    skirmish["timestamp"] = (
-        timed_lines["linetext"].str[:24].str.strip("[ ").str.strip(" ]")
-    )
-    skirmish["timestamp"] = pd.to_datetime(
-        skirmish["timestamp"], format="%Y.%m.%d %H:%M:%S"
-    )
-    skirmish["linetext"] = timed_lines["linetext"].str[24:]
-    skirmish.dropna(inplace=True)
-
-    skirmish = skirmish[~skirmish.linetext.str.contains("(hint)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("(question)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("(notify)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("(warning)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("(info)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("(bounty)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("(None)")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("Warp scramble attempt")]
-    skirmish = skirmish[~skirmish.linetext.str.contains("Warp disruption attempt")]
-
-    skirmish["linetext"] = skirmish["linetext"].str[8:]
-
-    # change neut strings slightly to represent incoming and outgoing colors
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"<color=0xffe57f7f>", "in ", regex=True
-    )
-    skirmish["linetext"] = skirmish["linetext"].str.replace(
-        r"<color=0xff7fffff>", "out ", regex=True
-    )
-
-    # remove HTML tags
-    skirmish["linetext"] = skirmish["linetext"].str.replace(r"<[^<>]*>", "", regex=True)
-
-    skirmish["module_ammo"] = ""
-    skirmish["hit_quality"] = ""
-    skirmish["target_pilot"] = pd.NA
-    skirmish["shiptype"] = ""
-    skirmish["neut_in"] = pd.NA
-    skirmish["neut_out"] = pd.NA
-    skirmish["cap_out"] = pd.NA
-    skirmish["cap_in"] = pd.NA
-
-    skirmish = process_misses(skirmish)
-
-    skirmish = process_neut_incoming(skirmish)
-    skirmish = process_neut_outgoing(skirmish)
-
-    skirmish = process_remote_repairs_outgoing(skirmish)
-    skirmish = process_remote_repairs_incoming(skirmish)
-
-    skirmish = process_remote_shield_outgoing(skirmish)
-    skirmish = process_remote_shield_incoming(skirmish)
-
-    skirmish = process_remote_capacitor_out(skirmish)
-    skirmish = process_remote_capacitor_in(skirmish)
-
-    skirmish.to_csv("skirmish_linetext.csv", encoding="utf-8", index=False)
-    skirmish = process_damage_incoming(skirmish)
-    skirmish = process_damage_outgoing(skirmish)
-
-    skirmish["module_ammo"] = skirmish["module_ammo"].str.replace(
-        r"^\W*", "", regex=True
-    )
-    skirmish["module_ammo"] = skirmish["module_ammo"].str.replace(
-        r"\s+$", "", regex=True
-    )
-
-    skirmish["target_pilot"] = skirmish["target_pilot"].fillna("").astype(str)
-    skirmish["target_pilot"] = skirmish["target_pilot"].str.replace(
-        r"^\W*", "", regex=True
-    )
-    skirmish["target_pilot"] = skirmish["target_pilot"].str.replace(
-        r"\s+$", "", regex=True
-    )
-
-    skirmish["hit_quality"] = skirmish["hit_quality"].fillna("").astype(str)
-    skirmish["hit_quality"] = skirmish["hit_quality"].str.replace(
-        r"^\W*", "", regex=True
-    )
-
-    skirmish.drop(columns="linetext", inplace=True)
-    skirmish.to_csv("test.csv")
-
-    print(skirmish.head(10))
-
-
-def new_skirmish():
-    files = select_files()
-
-    skirmish = pd.DataFrame()
-
-    for file in files:
-        skirmish = read_file(file, skirmish)
-
-    process_lines(skirmish)
-
-
 if __name__ == "__main__":
     # new_skirmish()
 
@@ -941,5 +775,15 @@ if __name__ == "__main__":
     logreader.read_files()
 
     logreader.process_frames()
+
+    logreader.print_stats()
+    
+    
+    
+    # print("Sum of cap transfered: " + str(logreader.capTransfer_out["amount"].sum()) + " GJ")
+    # print("Sum of cap recieved: " + str(logreader.capTransfer_in["amount"].sum()) + " GJ")
+    # print("Sum of neut in: " + str(logreader.capNeutralized_in["amount"].sum()) + " GJ")
+    # print("Sum of neut out: " + str(logreader.capNeutralized_out["amount"].sum()) + " GJ")
+    # print("Amount of times burst jammed: " + str(len(logreader.burst_jammed.index)))
 
     logreader.export_frames()
