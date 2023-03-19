@@ -172,7 +172,11 @@ class AnalysingLogReader:
             )
         ].copy()
 
-        self.burst_jammed = self.main_frame[self.main_frame.linetext.str.contains(logrex[self.language]["locklost"], regex=True)].copy()
+        self.burst_jammed = self.main_frame[
+            self.main_frame.linetext.str.contains(
+                logrex[self.language]["locklost"], regex=True
+            )
+        ].copy()
 
     def export_frames(self, path="./all_csv/"):
         self.damage_out.to_csv(path + "damage_out.csv")
@@ -213,7 +217,6 @@ class AnalysingLogReader:
         self.process_nos()
         self.process_misses()
         self.process_mining()
-
 
     def process_damage(self):
         if not self.damage_in.empty:
@@ -515,7 +518,7 @@ class AnalysingLogReader:
             self.capTransfer_in["linetext"] = self.capTransfer_in[
                 "linetext"
             ].str.replace(r"\s*\(combat\)\s", "", regex=True)
-            
+
             self.capTransfer_in["amount"] = self.capTransfer_in.apply(
                 lambda x: x.linetext.split(" ")[0], axis=1
             ).astype(int)
@@ -587,11 +590,13 @@ class AnalysingLogReader:
                 lambda x: x.linetext.rsplit(" - ", 1)[0], axis=1
             )
 
-            self.capNeutralized_in.rename({"linetext": "brackets"}, axis=1, inplace=True)
+            self.capNeutralized_in.rename(
+                {"linetext": "brackets"}, axis=1, inplace=True
+            )
             self.capNeutralized_in = self.capNeutralized_in[
                 ["timestamp", "pilot", "brackets", "module_or_ammo", "amount"]
             ]
-            
+
         if not self.capNeutralized_out.empty:
             self.capNeutralized_out["linetext"] = self.capNeutralized_out[
                 "linetext"
@@ -616,27 +621,29 @@ class AnalysingLogReader:
                 lambda x: x.linetext.rsplit(" - ", 1)[0], axis=1
             )
 
-            self.capNeutralized_out.rename({"linetext": "brackets"}, axis=1, inplace=True)
+            self.capNeutralized_out.rename(
+                {"linetext": "brackets"}, axis=1, inplace=True
+            )
             self.capNeutralized_out = self.capNeutralized_out[
                 ["timestamp", "pilot", "brackets", "module_or_ammo", "amount"]
             ]
 
     def process_nos(self):
         if not self.nosRecieved.empty:
-            self.nosRecieved["linetext"] = self.nosRecieved[
-                "linetext"
-            ].str.replace(r"<[^<>]*>", "", regex=True)
-            self.nosRecieved["linetext"] = self.nosRecieved[
-                "linetext"
-            ].str.replace(r"\s*\(combat\)\s", "", regex=True)
+            self.nosRecieved["linetext"] = self.nosRecieved["linetext"].str.replace(
+                r"<[^<>]*>", "", regex=True
+            )
+            self.nosRecieved["linetext"] = self.nosRecieved["linetext"].str.replace(
+                r"\s*\(combat\)\s", "", regex=True
+            )
 
             self.nosRecieved["amount"] = self.nosRecieved.apply(
                 lambda x: x.linetext.split(" ")[0], axis=1
             ).astype(int)
 
-            self.nosRecieved["linetext"] = self.nosRecieved[
-                "linetext"
-            ].str.replace(r"\d*\sGJ\senergy\sdrained\sfrom\s", "", regex=True)
+            self.nosRecieved["linetext"] = self.nosRecieved["linetext"].str.replace(
+                r"\d*\sGJ\senergy\sdrained\sfrom\s", "", regex=True
+            )
 
             self.nosRecieved["module_or_ammo"] = self.nosRecieved.apply(
                 lambda x: x.linetext.rsplit(" - ", 1)[-1], axis=1
@@ -652,20 +659,20 @@ class AnalysingLogReader:
             ]
 
         if not self.nosTaken.empty:
-            self.nosTaken["linetext"] = self.nosTaken[
-                "linetext"
-            ].str.replace(r"<[^<>]*>", "", regex=True)
-            self.nosTaken["linetext"] = self.nosTaken[
-                "linetext"
-            ].str.replace(r"\s*\(combat\)\s", "", regex=True)
+            self.nosTaken["linetext"] = self.nosTaken["linetext"].str.replace(
+                r"<[^<>]*>", "", regex=True
+            )
+            self.nosTaken["linetext"] = self.nosTaken["linetext"].str.replace(
+                r"\s*\(combat\)\s", "", regex=True
+            )
 
             self.nosTaken["amount"] = self.nosTaken.apply(
                 lambda x: x.linetext.split(" ")[0].strip("-"), axis=1
             ).astype(int)
 
-            self.nosTaken["linetext"] = self.nosTaken[
-                "linetext"
-            ].str.replace(r"-\d*\sGJ\senergy\sdrained\sto\s", "", regex=True)
+            self.nosTaken["linetext"] = self.nosTaken["linetext"].str.replace(
+                r"-\d*\sGJ\senergy\sdrained\sto\s", "", regex=True
+            )
 
             self.nosTaken["module_or_ammo"] = self.nosTaken.apply(
                 lambda x: x.linetext.rsplit(" - ", 1)[-1], axis=1
@@ -692,30 +699,72 @@ class AnalysingLogReader:
         if not self.damage_in.empty:
             print("Sum of damage taken: " + str(self.damage_in["amount"].sum()))
         if not self.armorRepaired_out.empty:
-            print("Sum of remote armor repaired: " + str(self.armorRepaired_out["amount"].sum()))
+            print(
+                "Sum of remote armor repaired: "
+                + str(self.armorRepaired_out["amount"].sum())
+            )
         if not self.armorRepaired_in.empty:
-            print("Sum of remote armor recieved: " + str(self.armorRepaired_in["amount"].sum()))
+            print(
+                "Sum of remote armor recieved: "
+                + str(self.armorRepaired_in["amount"].sum())
+            )
         if not self.shieldBoosted_out.empty:
-            print("Sum of remote shield boosted: " + str(self.shieldBoosted_out["amount"].sum()))
+            print(
+                "Sum of remote shield boosted: "
+                + str(self.shieldBoosted_out["amount"].sum())
+            )
         if not self.shieldBoosted_in.empty:
-            print("Sum of remote shield recieved: " + str(self.shieldBoosted_in["amount"].sum()))
+            print(
+                "Sum of remote shield recieved: "
+                + str(self.shieldBoosted_in["amount"].sum())
+            )
         if not self.hullRepaired_out.empty:
-            print("Sum of remote hull repaired: " + str(self.hullRepaired_out["amount"].sum()))
+            print(
+                "Sum of remote hull repaired: "
+                + str(self.hullRepaired_out["amount"].sum())
+            )
         if not self.hullRepaired_in.empty:
-            print("Sum of remote hull recieved: " + str(self.hullRepaired_in["amount"].sum()))
+            print(
+                "Sum of remote hull recieved: "
+                + str(self.hullRepaired_in["amount"].sum())
+            )
         if not self.capTransfer_out.empty:
-            print("Sum of remote cap transfer sent: " + str(self.capTransfer_out["amount"].sum()) + " GJ")
+            print(
+                "Sum of remote cap transfer sent: "
+                + str(self.capTransfer_out["amount"].sum())
+                + " GJ"
+            )
         if not self.capTransfer_in.empty:
-            print("Sum of remote cap transfer recieved: " + str(self.capTransfer_in["amount"].sum()) + " GJ")
+            print(
+                "Sum of remote cap transfer recieved: "
+                + str(self.capTransfer_in["amount"].sum())
+                + " GJ"
+            )
         if not self.capNeutralized_out.empty:
-            print("Sum of cap neutralization out: " + str(self.capNeutralized_out["amount"].sum()) + " GJ")
+            print(
+                "Sum of cap neutralization out: "
+                + str(self.capNeutralized_out["amount"].sum())
+                + " GJ"
+            )
         if not self.capNeutralized_in.empty:
-            print("Sum of cap neutralization in: " + str(self.capNeutralized_in["amount"].sum() + self.nosTaken["amount"].sum()) + " GJ")
+            print(
+                "Sum of cap neutralization in: "
+                + str(
+                    self.capNeutralized_in["amount"].sum()
+                    + self.nosTaken["amount"].sum()
+                )
+                + " GJ"
+            )
         if not self.nosRecieved.empty:
-            print("Sum of nos recieved: " + str(self.nosRecieved["amount"].sum()) + " GJ")
+            print(
+                "Sum of nos recieved: " + str(self.nosRecieved["amount"].sum()) + " GJ"
+            )
 
         if not self.burst_jammed.empty:
-            print("Amount of times burst jammed: " + str(len(logreader.burst_jammed.index)))
+            print(
+                "Amount of times burst jammed: "
+                + str(len(logreader.burst_jammed.index))
+            )
         # self.misses_out = pd.DataFrame()
         # self.misses_in = pd.DataFrame()
 
@@ -777,9 +826,7 @@ if __name__ == "__main__":
     logreader.process_frames()
 
     logreader.print_stats()
-    
-    
-    
+
     # print("Sum of cap transfered: " + str(logreader.capTransfer_out["amount"].sum()) + " GJ")
     # print("Sum of cap recieved: " + str(logreader.capTransfer_in["amount"].sum()) + " GJ")
     # print("Sum of neut in: " + str(logreader.capNeutralized_in["amount"].sum()) + " GJ")
